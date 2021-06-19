@@ -1,0 +1,737 @@
+  /* reset */
+  *{ 
+      margin: 0px;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      border: none;
+      outline: none;
+  }
+
+  /* inicio css */
+
+  body{
+    background-color: rgba(224, 246, 255, 0.897);
+  }
+  /* header */
+  .divHeader{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 50px;
+    border-bottom: solid gray 1px;
+  }
+
+  #logo{
+    margin-left: 5%;
+    width: 50px;
+    height: 50px;
+  }
+  .user{
+    right: 1%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 2%;
+    padding-right: 50px;
+  }
+
+  #menu{
+    right: 1%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 2%;
+  }
+
+  .divMenu{
+    background-color: whitesmoke;
+    border-bottom: solid gray 1px;
+    width: 100%;
+    height: 35px;
+    position: sticky;
+    top: 0;
+  }
+  ul{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+  }
+
+  li{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 150px;
+    align-items: center;
+
+
+  }
+  /* end header */
+
+  /* main */
+  main{
+    background-color: rgba(139, 139, 139, 0.295);
+    border: solid black 1px;
+    height: 350px;
+    margin-top: 0.5%;
+  }
+  /* end main */
+
+  h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 250%;
+  }
+  .productos{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 450px;
+    grid-template-areas: "area1 area2 area3";
+    column-gap: 10px;
+    justify-items: space-around;
+    align-items: center;
+  }
+  #productosDest1{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area1;
+  }
+  #productosDest2{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area2;
+  }
+  #productosDest3{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area3;
+  }
+  #logoCliente{
+    background-color: rgb(161, 161, 161);
+    right: 1%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 5%;
+  }
+  /* footer */
+  .divFooter{
+    background-color: whitesmoke;
+    margin-top: 100%;
+  }
+  #newsLetter{
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 5%;
+    border-bottom: solid gray 1px;
+    border-top: solid gray 1px;
+  }
+  #logosFooter{
+    width: 25px;
+    height: 25px;
+    margin: 1% 0 0 15px;
+  }
+  #spanFooter{
+    font-family: 'Anton', sans-serif;
+    left: 70%;
+    display: inline-block;
+    position: absolute;
+    margin: 0.6% 0 0 1%;
+  }
+  #infoFooter{
+    right: 1%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    margin: 0.6% 0 0 1%;
+  }
+  /* end footer*/
+
+
+  /* animations*/
+
+
+  /* media queries*/
+
+  /*TELEFONOS - DISPOSITIVOS XS*/
+    @media only screen and (max-width: 600px){
+
+      #user{
+        right: 2%;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 3%;
+        padding-right: 50px;
+      }
+      
+      #menu{
+        right: 2%;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 3%;
+      }
+  .divMenu{
+    background-color: whitesmoke;
+    border-bottom: solid gray 1px;
+    width: 100%;
+    height: 35px;
+    position: sticky;
+    top: 0;
+  }
+  ul{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+  }
+
+  li{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 150px;
+    align-items: center;
+    
+  }
+
+  main{
+    background-color: rgba(139, 139, 139, 0.295);
+    border: solid black 1px;
+    width: 100%;
+    height: 250px;
+    margin-top: 0.5%;
+  }
+  h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 250%;
+  }
+  .productos{
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 250px;
+    grid-template-areas: "area1 area2 area3";
+    column-gap: 5px;
+    justify-items: space-around;
+    align-items: center;
+  }
+  #productosDest1{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 65%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area1;
+  }
+  #productosDest2{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 65%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area2;
+  }
+  #productosDest3{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 65%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area3;
+  }
+  #logoCliente{
+    background-color: rgb(161, 161, 161);
+    right: 1%;
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    bottom: 5%;
+  }
+
+  .divFooter{
+    background-color: whitesmoke;
+    margin-top: 100%;
+  }
+  #newsLetter{
+    font-size: 10px;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 5%;
+    border-bottom: solid gray 1px;
+    border-top: solid gray 1px;
+  }
+  #emailLetter{
+    font-size: 10px;
+  }
+  #logosFooter{
+    width: 15px;
+    height: 15px;
+    margin: 1% 0 0 15px;
+  }
+  #spanFooter{
+    font-size: 6px;
+    font-family: 'Anton', sans-serif;
+    left: 70%;
+    display: inline-block;
+    position: absolute;
+    margin: 2% 1% 1% 1%;
+  }
+  #infoFooter{
+    right: 1%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0.6% 0 0 1%;
+  }
+
+
+  }
+  /*TELEFONOS LANDSCAPE + TABLET VERTICAL DISPOSITIVOS SMALLS*/
+  @media only screen and ( min-width: 600px){
+
+  #user{
+    right: 2%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 3%;
+    padding-right: 50px;
+  }
+
+  #menu{
+    right: 2%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 3%;
+  }
+
+  .divMenu{
+    background-color: whitesmoke;
+    border-bottom: solid gray 1px;
+    width: 100%;
+    height: 35px;
+    position: sticky;
+    top: 0;
+  }
+  ul{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+  }
+
+  li{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 150px;
+    align-items: center;
+    
+  }
+
+  main{
+    background-color: rgba(139, 139, 139, 0.295);
+    border: solid black 1px;
+    width: 100%;
+    height: 250px;
+    margin-top: 0.5%;
+  }
+  h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 250%;
+  }
+  .productos{
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 350px;
+    grid-template-areas: "area1 area2 area3";
+    column-gap: 5px;
+    justify-items: space-around;
+    align-items: center;
+  }
+  #productosDest1{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 65%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area1;
+  }
+  #productosDest2{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 65%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area2;
+  }
+  #productosDest3{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 65%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area3;
+  }
+  #logoCliente{
+    background-color: rgb(161, 161, 161);
+    right: 1%;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 5%;
+  }
+
+  .divFooter{
+    background-color: whitesmoke;
+    margin-top: 100%;
+  }
+  #newsLetter{
+    font-size: 13px;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 5%;
+    border-bottom: solid gray 1px;
+    border-top: solid gray 1px;
+  }
+  #emailLetter{
+    font-size: 13px;
+  }
+  #logosFooter{
+    width: 25px;
+    height: 25px;
+    margin: 1% 0 0 15px;
+  }
+  #spanFooter{
+    font-size: 10px;
+    font-family: 'Anton', sans-serif;
+    left: 70%;
+    display: inline-block;
+    position: absolute;
+    margin: 1.5% 1% 1% 1%;
+  }
+  #infoFooter{
+    right: 1%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    margin: 0.6% 0 0 1%;
+  }
+
+
+
+  }
+
+  /*TABLET LAND + UP DISPOSITIVOS MEDIOS*/
+  @media only screen and ( min-width: 768px){
+
+
+
+  }
+  /*NOTEBOOK+LAP+ESCRITORIO DISPOSITIVOS LARGOS*/
+  @media only screen and (min-width: 992px){
+
+  #user{
+    right: 2%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 1%;
+    padding-right: 50px;
+  }
+
+  #menu{
+    right: 2%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 1%;
+  }
+
+  main{
+    background-color: rgba(139, 139, 139, 0.295);
+    border: solid black 1px;
+    height: 350px;
+    margin-top: 0.5%;
+  }
+
+  h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 250%;
+  }
+  .productos{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 450px;
+    grid-template-areas: "area1 area2 area3";
+    column-gap: 10px;
+    justify-items: space-around;
+    align-items: center;
+  }
+  #productosDest1{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area1;
+  }
+  #productosDest2{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area2;
+  }
+  #productosDest3{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area3;
+  }
+  .divFooter{
+    background-color: whitesmoke;
+    margin-top: 100%;
+  }
+  #newsLetter{
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 5%;
+    border-bottom: solid gray 1px;
+    border-top: solid gray 1px;
+  }
+  #logosFooter{
+    width: 25px;
+    height: 25px;
+    margin: 1% 0 0 15px;
+  }
+  #spanFooter{
+    font-family: 'Anton', sans-serif;
+    left: 70%;
+    display: inline-block;
+    position: absolute;
+    margin: 0.6% 0 0 1%;
+  }
+  #infoFooter{
+    right: 1%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    margin: 0.6% 0 0 1%;
+  }
+  }
+  /*DISPOSITIVOS XL LARGOS*/
+  @media only screen and ( min-width: 1200px){
+
+  body{
+    background-color: rgba(224, 246, 255, 0.897);
+  }
+  /* header */
+  .divHeader{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 70px;
+    border-bottom: solid gray 1px;
+  }
+
+  #logo{
+    margin-left: 5%;
+    width: 70px;
+    height: 70px;
+  }
+  #user{
+    right: 1%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 3%;
+    padding-right: 75px;
+  }
+
+  #menu{
+    right: 1%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 3%;
+  }
+    
+  .divMenu{
+    background-color: whitesmoke;
+    border-bottom: solid gray 1px;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+  }
+  ul{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+  }
+
+  li{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 150px;
+    align-items: center;
+    
+    
+  }
+  /* end header */
+
+  /* main */
+  main{
+    background-color: rgba(139, 139, 139, 0.295);
+    border: solid black 1px;
+    height: 450px;
+    margin-top: 0.5%;
+  }
+  /* end main */
+
+  h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 250%;
+  }
+  .productos{
+    background-color: rgb(255, 255, 255);
+    height: 650px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 600px;
+    grid-template-areas: "area1 area2 area3";
+    column-gap: 10px;
+    justify-items: space-around;
+    align-items: center;
+  }
+  #productosDest1{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area1;
+  }
+  #productosDest2{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area2;
+  }
+  #productosDest3{
+    background-color: rgb(255, 0, 0);
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: solid black 1px;
+    grid-area: area3;
+  }
+  #logoCliente{
+    background-color: rgb(161, 161, 161);
+    right: 1%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 5%;
+  }
+  /* footer */
+  .divFooter{
+    background-color: whitesmoke;
+    margin-top: 100%;
+  }
+  #newsLetter{
+    font-size: 15px;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 5%;
+    border-bottom: solid gray 1px;
+    border-top: solid gray 1px;
+  }
+  #emailLetter{
+    font-size: 15px;
+  }
+  #logosFooter{
+    width: 35px;
+    height: 35px;
+    margin: 1% 0 0 15px;
+  }
+  #spanFooter{
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+    left: 70%;
+    display: inline-block;
+    position: absolute;
+    margin: 1% 0 0 1%;
+  }
+  #infoFooter{
+    right: 1%;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    margin: 0.6% 0 0 1%;
+  }
+
+}
+
+
